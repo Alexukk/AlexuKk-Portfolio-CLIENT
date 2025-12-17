@@ -1,0 +1,44 @@
+/* Переменные для Киберпанк темы */
+:root {
+  --bg-dark: #050505;
+  --card-bg: rgba(15, 15, 25, 0.8);
+  --neon-blue: #00d2ff;
+  --neon-purple: #9d50bb;
+  --text-main: #e0e0e0;
+  --gradient-main: linear-gradient(
+    135deg,
+    var(--neon-blue),
+    var(--neon-purple)
+  );
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Эффект стекла для карточек */
+.glass-panel {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 210, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  transition: 0.3s ease-in-out;
+}
+
+.glass-panel:hover {
+  border-color: var(--neon-purple);
+  box-shadow: 0 0 15px rgba(157, 80, 187, 0.3);
+}
+
+/* Текст с градиентом */
+.text-gradient {
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  background-clip: text; /* Добавили стандартное свойство для совместимости */
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Фолбэк */
+}

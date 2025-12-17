@@ -1,0 +1,20 @@
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.nav-link {
+  color: var(--text-main) !important;
+  font-weight: 500;
+  transition: 0.3s;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: var(--neon-blue) !important;
+  text-shadow: 0 0 8px var(--neon-blue);
+}
+
+.nav-link i {
+  margin-right: 5px;
+  font-size: 0.9rem;
+}
