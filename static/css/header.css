@@ -18,3 +18,37 @@
   margin-right: 5px;
   font-size: 0.9rem;
 }
+
+/* Эффект при наведении на ссылки */
+.nav-link {
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--neon-blue) !important;
+  transform: translateY(-1px);
+}
+
+/* Специфический стиль для кнопки Support Me */
+.btn-cyber-outline {
+  border: 1px solid rgba(0, 210, 255, 0.3) !important;
+  border-radius: 8px;
+  margin-top: 2px;
+}
+
+.btn-cyber-outline:hover {
+  background: rgba(0, 210, 255, 0.1);
+  border-color: var(--neon-blue) !important;
+}
+
+/* Для мобильной версии убираем лишние отступы */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    padding-top: 15px;
+  }
+  .btn-cyber-outline {
+    border: none !important;
+    padding-left: 0 !important;
+  }
+}
