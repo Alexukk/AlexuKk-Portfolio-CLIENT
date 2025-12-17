@@ -70,3 +70,26 @@ body {
   text-shadow: 0 0 10px rgba(0, 210, 255, 0.2);
   font-weight: 500;
 }
+
+/* Маленькие бейджи для инструментов */
+.tech-badge-sm {
+  background: rgba(0, 210, 255, 0.05);
+  border: 1px solid rgba(0, 210, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--neon-blue);
+  transition: 0.3s;
+}
+
+.tech-badge-sm:hover {
+  background: rgba(0, 210, 255, 0.15);
+  border-color: var(--neon-blue);
+  box-shadow: 0 0 10px rgba(0, 210, 255, 0.2);
+}
+
+/* Стили для списков фреймворков */
+ul.list-unstyled li {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+}
