@@ -93,3 +93,40 @@ ul.list-unstyled li {
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.8);
 }
+
+/* Структура для прижатия футера */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+main {
+  flex: 1 0 auto; /* Основной контент забирает всё свободное место */
+}
+
+footer {
+  flex-shrink: 0; /* Футер не сжимается */
+}
+
+/* Анимация пульсации для статуса */
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
